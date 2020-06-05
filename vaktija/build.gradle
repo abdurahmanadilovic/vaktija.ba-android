@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "ba.vaktija.android"
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 29
     }
 
     buildTypes {
@@ -31,5 +31,6 @@ dependencies {
     implementation 'uk.co.chrisjenx:calligraphy:2.1.0'
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
     implementation 'com.google.code.gson:gson:2.8.6'
+    implementation "androidx.work:work-runtime:2.3.4"
     implementation files('libs/systembartint-1.0.4.jar')
 }
